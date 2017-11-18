@@ -1,5 +1,6 @@
 package com.example.marta.mariosrestaurant;
 
+import com.example.marta.mariosrestaurant.tables.Patron;
 import com.example.marta.mariosrestaurant.tables.Table;
 
 import java.lang.reflect.Array;
@@ -17,10 +18,24 @@ public class Restaurant {
     public Restaurant(String name, int budget) {
         this.name = name;
         this.budget = budget;
-        this.tables = new ArrayList;
+        this.tables = new ArrayList<>();
     }
 
 
+    public int tablesCount() {
+        return tables.size();
+    }
 
 
+    public String getName() {
+        return name;
+    }
+
+    public int getBudget() {
+        return budget;
+    }
+
+    public void addToBudget(int cash) {
+        this.budget += cash;
+    }
 }
