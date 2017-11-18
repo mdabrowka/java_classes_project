@@ -43,6 +43,9 @@ public class PatronTest {
 
     @Test
     public void testCanPlaceOrder() {
+        patron.orderFromMenu(item1);
+        patron.orderFromMenu(item2);
+        assertEquals(2, patron.getNumberOfOrderedItems());
 
     }
 

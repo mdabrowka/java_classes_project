@@ -13,7 +13,7 @@ public class Patron {
     private String name;
     private int budget;
     private ArrayList<MenuItem> orderedItems;
-    Dish dish;
+    MenuItem dish;
 
 
     public Patron(String name, int budget) {
@@ -30,7 +30,11 @@ public class Patron {
         return this.budget;
     }
 
-    public void orderDish(Dish dish) {
+    public int getNumberOfOrderedItems() {
+        return orderedItems.size();
+    }
+
+    public void orderFromMenu(MenuItem dish) {
         orderedItems.add(dish);
     }
 
