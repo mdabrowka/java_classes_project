@@ -12,10 +12,10 @@ public class Dish<Ingredient> {
     private ArrayList<Ingredient> ingredients;
 
 
-    public Dish(String name, int price) {
+    public Dish(String name, int price, ArrayList<Ingredient> ingredients) {
         this.name = name;
         this.price = price;
-        ingredients = new ArrayList<Ingredient>();
+        this.ingredients = new ArrayList<Ingredient>();
     }
 
     public String getName() {

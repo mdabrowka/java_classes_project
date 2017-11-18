@@ -17,7 +17,8 @@ public class DishTest {
 
     @Before
     public void before() {
-        dish = new Dish("Ham sandwich", 5);
+        dish = new Dish("Ham sandwich", 5, );
+
 
     }
 
