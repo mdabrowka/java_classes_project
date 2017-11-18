@@ -80,6 +80,13 @@ public class TableTest {
         assertEquals(62, table101.totalValue());
     }
 
-
+    @Test
+    public void testCanResetTable() {
+        table101.addGuest(patron1);
+        table101.addGuest(patron2);
+        table101.addGuest(patron3);
+        table101.resetTable();
+        assertEquals(0, table101.tableSize());
+    }
 
 }

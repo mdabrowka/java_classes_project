@@ -45,6 +45,9 @@ public class Table {
         return total;
     }
 
+    public void resetTable() {
+        table.clear();
+    }
 
 
 
