@@ -23,7 +23,7 @@ public class TableTest {
         patron1 = new Patron("Terry", 300);
         patron2 = new Patron("Frankie", 400);
         patron3 = new Patron("Rory", 100);
-        table101 = new Table();
+        table101 = new Table(3);
     }
 
 

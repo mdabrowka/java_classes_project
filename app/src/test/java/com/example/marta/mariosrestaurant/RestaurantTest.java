@@ -46,6 +46,20 @@ public class RestaurantTest {
         assertEquals(300, restaurant.getBudget());
     }
 
+    @Test
+    public void canAddTables() {
+        restaurant.addTable(table101);
+        assertEquals(1, restaurant.tablesCount());
+    }
+
+    @Test
+    public void canCountTables() {
+        restaurant.addTable(table101);
+        restaurant.addTable(table102);
+        restaurant.addTable(table103);
+        assertEquals(3, restaurant.tablesCount());
+    }
+
 
 }
 

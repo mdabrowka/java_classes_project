@@ -8,10 +8,16 @@ import java.util.ArrayList;
 
 public class Table<Patron> {
     private ArrayList<Patron> table;
+    private int capacity;
 
 
-    public Table() {
+    public Table(int capacity) {
         this.table = new ArrayList();
+        this.capacity = capacity;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
     }
 
     public int tableSize() {
