@@ -5,4 +5,13 @@ package com.example.marta.mariosrestaurant.dishes;
  */
 
 public class Ingredient {
+    String type;
+
+
+    public Ingredient(String type) {
+        this.type = type;
+    }
+
+
+
 }

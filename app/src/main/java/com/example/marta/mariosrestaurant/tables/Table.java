@@ -25,8 +25,11 @@ public class Table<Patron> {
     }
 
 
-    public void addGuest(Patron patron) {
+    public String addGuest(Patron patron) {
+        if (tableSize() < capacity)
         table.add(patron);
+        else return "Sorry, this table is full";
+        return null;
     }
 
     public void removeGuest(Patron patron) {
