@@ -5,4 +5,21 @@ package com.example.marta.mariosrestaurant.tables;
  */
 
 public class Patron {
+    String name;
+    int budget;
+
+
+    public Patron(String name, int budget) {
+        this.name = name;
+        this.budget = budget;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getBudget() {
+        return this.budget;
+    }
+
 }
