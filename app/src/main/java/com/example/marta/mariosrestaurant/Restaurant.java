@@ -39,7 +39,7 @@ public class Restaurant {
         this.budget += cash;
     }
 
-    public void addTable(Table<Patron> table) {
+    public void addTable(Table table) {
         tables.add(table);
-    }
+   }
 }

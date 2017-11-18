@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public class Table<Patron> {
+public class Table {
     private ArrayList<Patron> table;
     private int capacity;
     private Patron patron;
@@ -37,13 +37,13 @@ public class Table<Patron> {
         table.remove(patron);
     }
 
-//    public int totalValue() {
-//        int total = 0;
-//        for (Patron patron : table) {
-//            total += patron.payBill();
-//        }
-//        return total;
-//    }
+    public int totalValue() {
+        int total = 0;
+        for (Patron patron : table) {
+            total += patron.calculateTotalShare();
+        }
+        return total;
+    }
 
 //        //iterate over the patrons at the table, accessing their tabs, calculating the value
 //        //of their tabs and adding the sum of the tabs to return the total value of the table//

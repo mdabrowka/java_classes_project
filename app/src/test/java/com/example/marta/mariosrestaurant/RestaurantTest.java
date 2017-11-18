@@ -14,15 +14,15 @@ import static junit.framework.Assert.assertEquals;
 
 public class RestaurantTest {
     Restaurant restaurant;
-    Table<Patron> table101, table102, table103;
+    Table table101, table102, table103;
     Patron patron1, patron2, patron3;
 
     @Before
     public void before() {
     restaurant = new Restaurant("Unter den Linden", 0);
-    table101 = new Table<Patron>(4);
-    table102 = new Table<Patron>(4);
-    table103 = new Table<Patron>(12);
+    table101 = new Table(4);
+    table102 = new Table(4);
+    table103 = new Table(12);
     patron1 = new Patron("Valeria", 200);
     patron2 = new Patron("Gustavo", 400);
     patron3 = new Patron("Pablo", 500);

@@ -49,6 +49,13 @@ public class PatronTest {
     }
 
     @Test
+    public void testCanCalculateTotal() {
+        patron.orderFromMenu(item1);
+        patron.orderFromMenu(item1);
+        assertEquals(24, patron.calculateTotalShare());
+    }
+
+    @Test
     public void testCanPayBill() {
         patron.orderFromMenu(item1);
         patron.orderFromMenu(item2);
