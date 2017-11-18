@@ -5,4 +5,7 @@ package com.example.marta.mariosrestaurant.dishes;
  */
 
 public abstract class MenuItem {
+    private String name;
+    private int price;
+
 }

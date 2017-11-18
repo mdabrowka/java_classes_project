@@ -1,6 +1,7 @@
 package com.example.marta.mariosrestaurant.tables;
 
 import com.example.marta.mariosrestaurant.dishes.Dish;
+import com.example.marta.mariosrestaurant.dishes.MenuItem;
 
 import java.util.ArrayList;
 
@@ -11,14 +12,14 @@ import java.util.ArrayList;
 public class Patron {
     private String name;
     private int budget;
-    private ArrayList<T extends MenuItem> orderedItems;
+    private ArrayList<MenuItem> orderedItems;
     Dish dish;
 
 
     public Patron(String name, int budget) {
         this.name = name;
         this.budget = budget;
-        this.orderedItems = new ArrayList;
+        this.orderedItems = new ArrayList<MenuItem>();
     }
 
     public String getName() {
@@ -30,8 +31,7 @@ public class Patron {
     }
 
     public void orderDish(Dish dish) {
-
-
+        orderedItems.add(dish);
     }
 
 }

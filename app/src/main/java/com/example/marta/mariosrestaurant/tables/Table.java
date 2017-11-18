@@ -36,10 +36,10 @@ public class Table<Patron> {
         table.remove(patron);
     }
 
-    public int totalValue() {
-        //iterate over the patrons at the table, accessing their tabs, calculating the value
-        //of their tabs and adding the sum of the tabs to return the total value of the table//
-    }
+//    public int totalValue() {
+//        //iterate over the patrons at the table, accessing their tabs, calculating the value
+//        //of their tabs and adding the sum of the tabs to return the total value of the table//
+//    }
 
 
 }

@@ -5,4 +5,13 @@ package com.example.marta.mariosrestaurant.dishes;
  */
 
 public class Drink extends MenuItem {
+    String name;
+    int price;
+
+
+    public Drink(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
 }
