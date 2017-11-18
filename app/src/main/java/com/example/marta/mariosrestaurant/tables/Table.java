@@ -45,6 +45,11 @@ public class Table {
         return total;
     }
 
+    public int splitBillEvenly() {
+        int evenBill = totalValue() / tableSize();
+        return evenBill;
+    }
+
     public void resetTable() {
         table.clear();
     }
