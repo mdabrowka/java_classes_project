@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Patron {
     private String name;
     private int budget;
-    private ArrayList<MenuItem> orderedItems;
+    private ArrayList<T extends MenuItem> orderedItems;
     Dish dish;
 
 
