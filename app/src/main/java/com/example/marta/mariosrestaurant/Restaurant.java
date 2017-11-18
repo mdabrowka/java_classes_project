@@ -14,6 +14,7 @@ public class Restaurant {
     private String name;
     private int budget;
     private ArrayList<Table> tables;
+    private Patron patron;
 
     public Restaurant(String name, int budget) {
         this.name = name;
@@ -42,4 +43,10 @@ public class Restaurant {
     public void addTable(Table table) {
         tables.add(table);
    }
+
+   public void acceptPayment() {
+       int cash = patron.calculateTotalShare();
+       addToBudget(cash);
+   }
+
 }

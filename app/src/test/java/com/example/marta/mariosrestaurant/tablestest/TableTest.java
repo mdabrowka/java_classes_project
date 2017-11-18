@@ -1,5 +1,8 @@
 package com.example.marta.mariosrestaurant.tablestest;
 
+import com.example.marta.mariosrestaurant.dishes.Dish;
+import com.example.marta.mariosrestaurant.dishes.Drink;
+import com.example.marta.mariosrestaurant.dishes.MenuItem;
 import com.example.marta.mariosrestaurant.tables.Patron;
 import com.example.marta.mariosrestaurant.tables.Table;
 
@@ -17,6 +20,7 @@ import static junit.framework.Assert.assertEquals;
 public class TableTest {
     Patron patron1, patron2, patron3, patron4;
     Table table101;
+    MenuItem item1, item2, item3, item4;
 
     @Before
     public void before() {
@@ -25,6 +29,10 @@ public class TableTest {
         patron3 = new Patron("Rory", 100);
         patron4 = new Patron("Mary", 100);
         table101 = new Table(3);
+        item1 = new Dish("Pizza", 14);
+        item2 = new Drink("White wine", 6);
+        item3 = new Dish("Pasta", 12);
+        item4 = new Drink("Red wine", 8);
     }
 
 
@@ -57,5 +65,21 @@ public class TableTest {
         assertEquals("Sorry, this table is full", table101.addGuest(patron4));
 
     }
+
+    @Test
+    public void testCanCalculateTableTotal() {
+        table101.addGuest(patron1);
+        table101.addGuest(patron2);
+        table101.addGuest(patron3);
+        patron1.orderFromMenu(item1);
+        patron1.orderFromMenu(item2);
+        patron2.orderFromMenu(item3);
+        patron2.orderFromMenu(item4);
+        patron3.orderFromMenu(item1);
+        patron3.orderFromMenu(item4);
+        assertEquals(62, table101.totalValue());
+    }
+
+
 
 }
