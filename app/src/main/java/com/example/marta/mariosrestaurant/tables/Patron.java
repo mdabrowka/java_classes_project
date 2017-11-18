@@ -38,4 +38,16 @@ public class Patron {
         orderedItems.add(dish);
     }
 
+    public void payBill() {
+        int total = 0;
+        for (MenuItem item : orderedItems) {
+            total += item.getPrice();
+        }
+        budget -= total;
+    }
+
 }
+
+
+
+

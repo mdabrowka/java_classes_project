@@ -13,19 +13,10 @@ public class Dish extends MenuItem {
 
 
     public Dish(String name, int price) {
-        this.name = name;
-        this.price = price;
+        super(name, price);
 //        this.ingredients = new ArrayList<Ingredient>();
     }
 
-
-    public String getName() {
-        return this.name;
-    }
-
-    public int getPrice() {
-        return this.price;
-    }
 
 //    public ArrayList getIngredients() {
 //        return this.ingredients;

@@ -3,6 +3,7 @@ package com.example.marta.mariosrestaurant.dishestest;
 import com.example.marta.mariosrestaurant.dishes.Dish;
 import com.example.marta.mariosrestaurant.dishes.Ham;
 import com.example.marta.mariosrestaurant.dishes.Ingredient;
+import com.example.marta.mariosrestaurant.dishes.MenuItem;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,7 +17,7 @@ import static junit.framework.Assert.assertEquals;
  */
 
 public class DishTest {
-    Dish dish;
+    MenuItem dish;
     ArrayList<Ingredient> ingredients;
 
 

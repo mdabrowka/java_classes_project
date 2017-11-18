@@ -10,8 +10,7 @@ public class Drink extends MenuItem {
 
 
     public Drink(String name, int price) {
-        this.name = name;
-        this.price = price;
+        super(name, price);
     }
 
 }

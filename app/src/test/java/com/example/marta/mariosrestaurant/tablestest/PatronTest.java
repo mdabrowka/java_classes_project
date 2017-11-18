@@ -46,7 +46,14 @@ public class PatronTest {
         patron.orderFromMenu(item1);
         patron.orderFromMenu(item2);
         assertEquals(2, patron.getNumberOfOrderedItems());
+    }
 
+    @Test
+    public void testCanPayBill() {
+        patron.orderFromMenu(item1);
+        patron.orderFromMenu(item2);
+        patron.payBill();
+        assertEquals(186, patron.getBudget());
     }
 
 }
