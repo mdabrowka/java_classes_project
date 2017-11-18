@@ -38,13 +38,19 @@ public class Patron {
         orderedItems.add(dish);
     }
 
-    public void payBill() {
+    public int calculateTotalShare() {
         int total = 0;
         for (MenuItem item : orderedItems) {
             total += item.getPrice();
         }
+        return total;
+    }
+
+    public void payBill() {
+       int total = calculateTotalShare();
         budget -= total;
     }
+
 
 }
 

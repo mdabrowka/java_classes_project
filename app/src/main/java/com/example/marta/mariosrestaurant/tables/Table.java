@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class Table<Patron> {
     private ArrayList<Patron> table;
     private int capacity;
+    private Patron patron;
 
 
     public Table(int capacity) {
@@ -37,6 +38,13 @@ public class Table<Patron> {
     }
 
 //    public int totalValue() {
+//        int total = 0;
+//        for (Patron patron : table) {
+//            total += patron.payBill();
+//        }
+//        return total;
+//    }
+
 //        //iterate over the patrons at the table, accessing their tabs, calculating the value
 //        //of their tabs and adding the sum of the tabs to return the total value of the table//
 //    }
