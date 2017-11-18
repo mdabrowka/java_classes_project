@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 
 public class Table<Patron> {
-    ArrayList<Patron> table;
+    private ArrayList<Patron> table;
 
 
     public Table() {

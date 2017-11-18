@@ -5,8 +5,8 @@ package com.example.marta.mariosrestaurant.tables;
  */
 
 public class Patron {
-    String name;
-    int budget;
+    private String name;
+    private int budget;
 
 
     public Patron(String name, int budget) {
