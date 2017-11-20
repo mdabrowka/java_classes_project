@@ -52,4 +52,12 @@ public class DishTest {
         assertEquals(1, dish.ingredientCount());
     }
 
+    @Test
+    public void testCanRemoveIngredient() {
+        dish.addIngredient(ham);
+        dish.addIngredient(bread);
+        dish.removeIngredient(bread);
+        assertEquals(1, dish.ingredientCount());
+    }
+
 }
