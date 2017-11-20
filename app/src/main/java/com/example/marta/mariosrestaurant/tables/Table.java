@@ -45,8 +45,8 @@ public class Table {
         return total;
     }
 
-    public int splitBillEvenly() {
-        int evenBill = totalValue() / tableSize();
+    public double splitBillEvenly() {
+        double evenBill = totalValue() / tableSize();
         return evenBill;
     }
 

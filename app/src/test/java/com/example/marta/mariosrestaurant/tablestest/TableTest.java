@@ -87,7 +87,13 @@ public class TableTest {
 
     @Test
     public void canSplitBillEvenly() {
-
+        table101.addGuest(patron1);
+        table101.addGuest(patron2);
+        patron1.orderFromMenu(item1);
+        patron1.orderFromMenu(item2);
+        patron2.orderFromMenu(item3);
+        patron2.orderFromMenu(item4);
+        assertEquals(20, table101.splitBillEvenly(), 0.0);
     }
 
     @Test
