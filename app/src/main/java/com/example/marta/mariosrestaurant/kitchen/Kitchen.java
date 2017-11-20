@@ -5,4 +5,5 @@ package com.example.marta.mariosrestaurant.kitchen;
  */
 
 public class Kitchen {
+    private Pantry pantry;
 }
