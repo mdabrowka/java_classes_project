@@ -10,9 +10,12 @@ public class Menu<Menuable> {
     private ArrayList<Menuable> menuOptions;
 
 
+    public Menu() {
+        this.menuOptions = new ArrayList<Menuable>();
+    }
 
     public int dishCount() {
-      return menuOptions.size();
+        return menuOptions.size();
     }
 
 
@@ -26,11 +29,8 @@ public class Menu<Menuable> {
 
 
     public boolean checkIFSthIsInIt(Menuable item) {
-       if menuOptions.contains(Menuable item) == true;
-       return
-
+        if (menuOptions.contains(item)) {
+        }
+        return false;
     }
-
-
-
 }
