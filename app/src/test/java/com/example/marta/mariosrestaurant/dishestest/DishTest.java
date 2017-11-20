@@ -1,7 +1,6 @@
 package com.example.marta.mariosrestaurant.dishestest;
 
 import com.example.marta.mariosrestaurant.dishes.Dish;
-import com.example.marta.mariosrestaurant.dishes.Ham;
 import com.example.marta.mariosrestaurant.dishes.Ingredient;
 import com.example.marta.mariosrestaurant.dishes.MenuItem;
 
@@ -17,15 +16,18 @@ import static junit.framework.Assert.assertEquals;
  */
 
 public class DishTest {
-    MenuItem dish;
+    Dish dish;
     ArrayList<Ingredient> ingredients;
+    Ingredient ham;
+    Ingredient bread;
 
 
     @Before
     public void before() {
         dish = new Dish("Ham sandwich", 5);
-        ingredients = new ArrayList<Ingredient>();
-
+        ingredients = new ArrayList();
+        ham = new Ingredient("ham");
+        bread = new Ingredient("bread");
     }
 
 
@@ -39,5 +41,14 @@ public class DishTest {
         assertEquals(5, dish.getPrice());
     }
 
+    @Test
+    public void testDishStartsEmpty() {
+        assertEquals(0, dish.ingredientCount());
+    }
+
+//    @Test
+//    public void testCanAddIngredientToDish() {
+//        ingredients
+//    }
 
 }

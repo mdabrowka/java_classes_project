@@ -18,8 +18,20 @@ public class Dish extends MenuItem {
     }
 
 
-//    public ArrayList getIngredients() {
-//        return this.ingredients;
-//    }
+    public int ingredientCount() {
+        return ingredients.size();
+    }
+
+    public void addIngredient(Ingredient ingredient) {
+        ingredients.add(ingredient);
+    }
+
+    public void removeIngredient(Ingredient ingredient) {
+        ingredients.remove(ingredient);
+    }
+
+    public boolean checkIfDishContainsIngredient(Ingredient ingredient) {
+        return ingredients.contains(ingredient);
+    }
 
 }
