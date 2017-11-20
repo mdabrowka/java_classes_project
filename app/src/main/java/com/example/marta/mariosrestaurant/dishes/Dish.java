@@ -9,13 +9,14 @@ import java.util.ArrayList;
 public class Dish extends MenuItem {
     private String name;
     private int price;
-//    private ArrayList<Ingredient> ingredients;
+    private ArrayList<Ingredient> ingredients;
 
 
     public Dish(String name, int price) {
         super(name, price);
-//        this.ingredients = new ArrayList<Ingredient>();
+        this.ingredients = new ArrayList<Ingredient>();
     }
+
 
 
 //    public ArrayList getIngredients() {

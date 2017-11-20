@@ -25,7 +25,7 @@ public class PatronTest {
 
     @Before
     public void before() {
-        patron = new Patron("Marion", 200);
+        patron = new Patron("Marion");
         orderedItems = new ArrayList<MenuItem>();
         item1 = new Dish("Spagboll", 12);
         item2 = new Drink("Coca-Cola", 2);
@@ -38,7 +38,7 @@ public class PatronTest {
 
     @Test
     public void testCanGetBudget() {
-        assertEquals(200, patron.getBudget());
+        assertEquals(200, patron.getTab());
     }
 
     @Test
@@ -60,7 +60,7 @@ public class PatronTest {
         patron.orderFromMenu(item1);
         patron.orderFromMenu(item2);
         patron.payBill();
-        assertEquals(186, patron.getBudget());
+        assertEquals(186, patron.getTab());
     }
 
 }

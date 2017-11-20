@@ -5,7 +5,7 @@ package com.example.marta.mariosrestaurant.dishes;
  */
 
 public abstract class Ingredient {
-    String type;
+   private String type;
 
 
     public Ingredient(String type) {
