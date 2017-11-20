@@ -46,9 +46,10 @@ public class DishTest {
         assertEquals(0, dish.ingredientCount());
     }
 
-//    @Test
-//    public void testCanAddIngredientToDish() {
-//        ingredients
-//    }
+    @Test
+    public void testCanAddIngredientToDish() {
+        dish.addIngredient(ham);
+        assertEquals(1, dish.ingredientCount());
+    }
 
 }
