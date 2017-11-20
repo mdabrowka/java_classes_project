@@ -60,4 +60,10 @@ public class DishTest {
         assertEquals(1, dish.ingredientCount());
     }
 
+    @Test
+    public void testReturnsTrueIfIngredientInTheDish() {
+        dish.addIngredient(ham);
+        assertEquals(true, dish.checkIfDishContainsIngredient(ham));
+    }
+
 }
