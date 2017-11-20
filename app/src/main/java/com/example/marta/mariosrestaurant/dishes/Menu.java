@@ -6,12 +6,12 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public class Menu<Menuable> {
-    private ArrayList<Menuable> menuOptions;
+public class Menu<MenuItem> {
+    private ArrayList<MenuItem> menuOptions;
 
 
     public Menu() {
-        this.menuOptions = new ArrayList<Menuable>();
+        this.menuOptions = new ArrayList();
     }
 
     public int dishCount() {
@@ -19,18 +19,19 @@ public class Menu<Menuable> {
     }
 
 
-    public void addToTheMenu(Menuable item) {
+    public void addToTheMenu(MenuItem item) {
         menuOptions.add(item);
     }
 
-    public void removeFromTheMenu(Menuable item) {
+    public void removeFromTheMenu(MenuItem item) {
         menuOptions.remove(item);
     }
 
 
-    public boolean checkIfItemOnTheMenu(Menuable item) {
-        if (menuOptions.contains(item)) {
-        }
-        return true;
+    public boolean checkIfItemOnTheMenu(MenuItem item) {
+        return menuOptions.contains(item);
+//        if (menuOptions.contains(item)) {
+//            return true;
+//        } return false;
     }
 }
