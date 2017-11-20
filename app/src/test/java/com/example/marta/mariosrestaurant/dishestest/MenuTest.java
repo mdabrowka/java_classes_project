@@ -42,5 +42,15 @@ public class MenuTest {
         assertEquals(2, menu.dishCount());
     }
 
+    @Test
+    public void testCanCheckIfTheItemIsOnTheMenu() {
+        menu.addToTheMenu(item1);
+        menu.addToTheMenu(item2);
+        menu.addToTheMenu(item3);
+        assertEquals(true, menu.checkIfItemOnTheMenu(item1));
+    }
+
+
+
 
 }

@@ -28,9 +28,9 @@ public class Menu<Menuable> {
     }
 
 
-    public boolean checkIFSthIsInIt(Menuable item) {
+    public boolean checkIfItemOnTheMenu(Menuable item) {
         if (menuOptions.contains(item)) {
         }
-        return false;
+        return true;
     }
 }
