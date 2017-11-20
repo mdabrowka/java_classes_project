@@ -5,5 +5,12 @@ package com.example.marta.mariosrestaurant.kitchen;
  */
 
 public class Kitchen {
+    Kitchen kitchen;
     private Pantry pantry;
+
+    public Kitchen() {
+        this.kitchen = new Kitchen();
+
+    }
+
 }
