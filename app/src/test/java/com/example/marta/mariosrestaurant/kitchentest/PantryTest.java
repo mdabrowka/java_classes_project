@@ -32,9 +32,14 @@ public class PantryTest {
     }
 
     @Test
-    public void canAddToPantry() {
+    public void testCanAddToPantry() {
         pantry.addToStock(beef, 15);
         assertEquals(true, pantry.containsIngredient(beef));
     }
 
+    @Test
+    public void testReturnsFalseIfNoIngredient() {
+        pantry.addToStock(beef, 15);
+        assertEquals(false, pantry.containsIngredient(ham));
+    }
 }

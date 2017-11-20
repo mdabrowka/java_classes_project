@@ -16,7 +16,7 @@ public class Pantry {
 
 
     public Pantry() {
-       // this.pantry = new ArrayList<Ingredient>();
+        // this.pantry = new ArrayList<Ingredient>();
         this.stock = new HashMap<Ingredient, Integer>();
     }
 
@@ -27,7 +27,9 @@ public class Pantry {
 
 
     public boolean containsIngredient(Ingredient ingredient) {
-       if (stock.containsKey(ingredient));
-        return true;
+        if (stock.containsKey(ingredient) && stock.get(ingredient) >= 1) {
+            return true;
+        }
+        return false;
     }
 }
