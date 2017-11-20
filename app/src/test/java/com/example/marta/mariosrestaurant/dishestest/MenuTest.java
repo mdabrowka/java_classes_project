@@ -33,5 +33,14 @@ public class MenuTest {
         assertEquals(1, menu.dishCount());
     }
 
+    @Test
+    public void testCanRemoveFromMenu() {
+        menu.addToTheMenu(item1);
+        menu.addToTheMenu(item2);
+        menu.addToTheMenu(item3);
+        menu.removeFromTheMenu(item1);
+        assertEquals(2, menu.dishCount());
+    }
+
 
 }
