@@ -14,4 +14,9 @@ public class Ingredient {
 
 
 
+    public String getType() {
+        return this.type;
+    }
+
+
 }
