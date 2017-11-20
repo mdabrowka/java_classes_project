@@ -20,4 +20,10 @@ public class Pantry {
         this.stock = new HashMap<MenuItem, Integer>();
     }
 
+
+    public void addToStock(MenuItem item, Integer integer) {
+        stock.put(item, integer);
+    }
+
+
 }
