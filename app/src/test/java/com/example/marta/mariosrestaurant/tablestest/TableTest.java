@@ -24,10 +24,10 @@ public class TableTest {
 
     @Before
     public void before() {
-        patron1 = new Patron("Terry", 300);
-        patron2 = new Patron("Frankie", 400);
-        patron3 = new Patron("Rory", 100);
-        patron4 = new Patron("Mary", 100);
+        patron1 = new Patron("Terry");
+        patron2 = new Patron("Frankie");
+        patron3 = new Patron("Rory");
+        patron4 = new Patron("Mary");
         table101 = new Table(3);
         item1 = new Dish("Pizza", 14);
         item2 = new Drink("White wine", 6);
@@ -39,6 +39,11 @@ public class TableTest {
     @Test
     public void testTableStartsEmpty() {
         assertEquals(0, table101.tableSize());
+    }
+
+    @Test
+    public void testCanGetCapacity() {
+        assertEquals(3, table101.getCapacity());
     }
 
     @Test
@@ -78,6 +83,11 @@ public class TableTest {
         patron3.orderFromMenu(item1);
         patron3.orderFromMenu(item4);
         assertEquals(62, table101.totalValue());
+    }
+
+    @Test
+    public void canSplitBillEvenly() {
+
     }
 
     @Test

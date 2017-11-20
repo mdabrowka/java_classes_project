@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Table {
     private ArrayList<Patron> table;
     private int capacity;
-    private Patron patron;
+
 
 
     public Table(int capacity) {

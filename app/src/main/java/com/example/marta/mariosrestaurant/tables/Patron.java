@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 public class Patron {
     private String name;
-    private int tab;
+    private double tab;
     private ArrayList<MenuItem> orderedItems;
-    MenuItem dish;
+
 
 
     public Patron(String name) {
@@ -27,7 +27,7 @@ public class Patron {
         return this.name;
     }
 
-    public int getTab() {
+    public double getTab() {
         return this.tab;
     }
 
@@ -35,12 +35,12 @@ public class Patron {
         return orderedItems.size();
     }
 
-    public void orderFromMenu(MenuItem dish) {
-        orderedItems.add(dish);
+    public void orderFromMenu(MenuItem item) {
+        orderedItems.add(item);
     }
 
-    public int calculateTotalShare() {
-        int total = 0;
+    public double calculateTotalShare() {
+        double total = 0.0;
         for (MenuItem item : orderedItems) {
             total += item.getPrice();
         }
@@ -48,7 +48,7 @@ public class Patron {
     }
 
     public void payBill() {
-       int total = calculateTotalShare();
+       double total = calculateTotalShare();
         tab -= total;
     }
 

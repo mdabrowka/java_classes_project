@@ -23,9 +23,9 @@ public class RestaurantTest {
     table101 = new Table(4);
     table102 = new Table(4);
     table103 = new Table(12);
-    patron1 = new Patron("Valeria", 200);
-    patron2 = new Patron("Gustavo", 400);
-    patron3 = new Patron("Pablo", 500);
+    patron1 = new Patron("Valeria");
+    patron2 = new Patron("Gustavo");
+    patron3 = new Patron("Pablo");
 
     }
 
@@ -36,7 +36,7 @@ public class RestaurantTest {
 
     @Test
     public void canGetBudget() {
-        assertEquals(0, restaurant.getBudget());
+        assertEquals(0, restaurant.getBudget(), 0.0);
     }
 
     @Test

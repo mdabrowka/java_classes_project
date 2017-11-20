@@ -6,14 +6,14 @@ package com.example.marta.mariosrestaurant.dishes;
 
 public abstract class MenuItem implements Menuable {
     private String name;
-    private int price;
+    private double price;
 
-    public MenuItem(String name, int price) {
+    public MenuItem(String name, double price) {
         this.name = name;
         this.price = price;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return this.price;
     }
 

@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 public class Dish extends MenuItem {
     private String name;
-    private int price;
+    private double price;
     private ArrayList<Ingredient> ingredients;
 
 
-    public Dish(String name, int price) {
+    public Dish(String name, double price) {
         super(name, price);
         this.ingredients = new ArrayList<Ingredient>();
     }

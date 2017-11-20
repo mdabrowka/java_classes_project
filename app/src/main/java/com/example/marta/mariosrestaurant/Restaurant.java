@@ -12,11 +12,11 @@ import java.util.ArrayList;
 
 public class Restaurant {
     private String name;
-    private int budget;
+    private double budget;
     private ArrayList<Table> tables;
     private Patron patron;
 
-    public Restaurant(String name, int budget) {
+    public Restaurant(String name, double budget) {
         this.name = name;
         this.budget = budget;
         this.tables = new ArrayList<>();
@@ -32,11 +32,11 @@ public class Restaurant {
         return name;
     }
 
-    public int getBudget() {
+    public double getBudget() {
         return budget;
     }
 
-    public void addToBudget(int cash) {
+    public void addToBudget(double cash) {
         this.budget += cash;
     }
 
@@ -45,7 +45,7 @@ public class Restaurant {
    }
 
    public void acceptPayment() {
-       int cash = patron.calculateTotalShare();
+       double cash = patron.calculateTotalShare();
        addToBudget(cash);
    }
 

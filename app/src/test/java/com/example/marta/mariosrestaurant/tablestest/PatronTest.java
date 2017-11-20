@@ -18,7 +18,6 @@ import static junit.framework.Assert.assertEquals;
 
 public class PatronTest {
     String name;
-    int budget;
     Patron patron;
     ArrayList<MenuItem> orderedItems;
     MenuItem item1, item2;
@@ -52,7 +51,7 @@ public class PatronTest {
     public void testCanCalculateTotal() {
         patron.orderFromMenu(item1);
         patron.orderFromMenu(item1);
-        assertEquals(24, patron.calculateTotalShare());
+        assertEquals(24, patron.calculateTotalShare(), 0.0);
     }
 
     @Test
