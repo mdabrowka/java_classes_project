@@ -1,6 +1,7 @@
 package com.example.marta.mariosrestaurant.tables;
 
 import com.example.marta.mariosrestaurant.dishes.Dish;
+import com.example.marta.mariosrestaurant.dishes.Ingredient;
 import com.example.marta.mariosrestaurant.dishes.MenuItem;
 import com.example.marta.mariosrestaurant.dishes.Menuable;
 
@@ -49,7 +50,13 @@ public class Patron {
 
     public void payBill() {
        double total = calculateTotalShare();
-        tab -= total;
+        tab = 0;
+        //set tab to zero//!!
+    }
+
+    public void requestCustomizedDish(Dish dish, Ingredient ingredient) {
+        orderFromMenu(dish);
+        dish.removeIngredient(ingredient);
     }
 
 

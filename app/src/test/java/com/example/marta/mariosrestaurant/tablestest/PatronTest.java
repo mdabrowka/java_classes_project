@@ -2,6 +2,7 @@ package com.example.marta.mariosrestaurant.tablestest;
 
 import com.example.marta.mariosrestaurant.dishes.Dish;
 import com.example.marta.mariosrestaurant.dishes.Drink;
+import com.example.marta.mariosrestaurant.dishes.Ingredient;
 import com.example.marta.mariosrestaurant.dishes.MenuItem;
 import com.example.marta.mariosrestaurant.tables.Patron;
 
@@ -21,6 +22,7 @@ public class PatronTest {
     Patron patron;
     ArrayList<MenuItem> orderedItems;
     MenuItem item1, item2;
+    Ingredient pasta, sauce;
 
     @Before
     public void before() {
@@ -28,6 +30,8 @@ public class PatronTest {
         orderedItems = new ArrayList<MenuItem>();
         item1 = new Dish("Spagboll", 12);
         item2 = new Drink("Coca-Cola", 2);
+        pasta = new Ingredient("pasta");
+        sauce = new Ingredient("tomato");
     }
 
     @Test
@@ -36,8 +40,8 @@ public class PatronTest {
     }
 
     @Test
-    public void testCanGetBudget() {
-        assertEquals(200, patron.getTab());
+    public void testTabIsZero() {
+        assertEquals(0.0, patron.getTab());
     }
 
     @Test
@@ -59,7 +63,7 @@ public class PatronTest {
         patron.orderFromMenu(item1);
         patron.orderFromMenu(item2);
         patron.payBill();
-        assertEquals(186, patron.getTab());
+        assertEquals(0.0, patron.getTab());
     }
 
 }
