@@ -6,22 +6,35 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertNotNull;
 
 /**
  * Created by marta on 18/11/2017.
  */
 
 public class IngredientTest {
-    Ingredient ingredient;
+    Ingredient beef;
 
     @Before
     public void before() {
-        ingredient = new Ingredient("beef", 20);
+        beef = new Ingredient("beef", 20);
     }
 
     @Test
     public void testCanGetType() {
-        assertEquals("beef", ingredient.getType());
+        assertEquals("beef", beef.getType());
     }
 
+
+    @Test
+    public void testCanGetNumber() {
+        assertEquals(20, beef.getNumber());
+    }
+
+    @Test
+    public void testCanDecreaseNumberByOne() {
+        beef.decreaseNumber();
+        assertEquals(19, beef.getNumber());
+    }
 }

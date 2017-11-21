@@ -24,5 +24,9 @@ public class Ingredient {
         return this.number;
     }
 
+    public void decreaseNumber() {
+        this.number -= 1;
+    }
+
 
 }
