@@ -34,4 +34,8 @@ public class Pantry {
         }
         return false;
     }
+
+    public void removeFromPantry(Ingredient ingredient) {
+        pantry.remove(ingredient);
+    }
 }

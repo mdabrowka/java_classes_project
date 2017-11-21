@@ -42,4 +42,12 @@ public class PantryTest {
         assertEquals(1, pantry.pantrySize());
     }
 
+    @Test
+    public void testRemoveFromPantry() {
+        pantry.addToPantry(chicken);
+        pantry.addToPantry(ham);
+        pantry.removeFromPantry(chicken);
+        assertEquals(1, pantry.pantrySize());
+    }
+
 }
