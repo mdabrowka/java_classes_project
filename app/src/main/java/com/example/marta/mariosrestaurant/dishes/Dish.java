@@ -46,7 +46,7 @@ public class Dish extends MenuItem {
 
 
     public void reduceAmountOfIngredient() {
-
+        if (checkIIngredientIsAvailable() == true)
         for (Ingredient ingredient : ingredients) {
             ingredient.decreaseNumber();
         }
