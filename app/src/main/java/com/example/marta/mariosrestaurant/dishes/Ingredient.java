@@ -6,16 +6,22 @@ package com.example.marta.mariosrestaurant.dishes;
 
 public class Ingredient {
    private String type;
+   private int number;
 
 
-    public Ingredient(String type) {
+    public Ingredient(String type, int number) {
         this.type = type;
+        this.number = number;
     }
 
 
 
     public String getType() {
         return this.type;
+    }
+
+    public int getNumber() {
+        return this.number;
     }
 
 

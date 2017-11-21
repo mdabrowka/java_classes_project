@@ -26,8 +26,8 @@ public class DishTest {
     public void before() {
         dish = new Dish("Ham sandwich", 5);
         ingredients = new ArrayList();
-        ham = new Ingredient("ham");
-        bread = new Ingredient("bread");
+        ham = new Ingredient("ham", 2);
+        bread = new Ingredient("bread", 5);
     }
 
 

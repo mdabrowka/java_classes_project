@@ -31,28 +31,5 @@ public class PantryTest {
         pasta = new Ingredient("pasta");
     }
 
-//    @Test
-//    public void testCanAddToPantry() {
-//        pantry.addToStock(beef, 15);
-//        assertEquals(true, pantry.containsIngredient(beef));
-//    }
-//
-//    @Test
-//    public void testReturnsFalseIfNoIngredient() {
-//        pantry.addToStock(beef, 15);
-//        assertEquals(false, pantry.containsIngredient(ham));
-//    }
-//
-//    @Test
-//    public void testCanReturnTheNumerOfPortions() {
-//        pantry.addToStock(beef, 15);
-//        assertEquals();
-//    }
-//
-//    @Test
-//    public void testCanRemoveAPortionFromThePantry() {
-//        pantry.addToStock(beef, 15);
-//        pantry.removeFromStock(beef, 2);
-//        assertEquals(13, pan);
-//    }
+
 }
