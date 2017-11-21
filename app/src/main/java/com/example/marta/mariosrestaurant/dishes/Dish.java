@@ -23,6 +23,7 @@ public class Dish extends MenuItem {
     }
 
     public void addIngredient(Ingredient ingredient) {
+        if (ingredient.getNumber() >= 1)
         ingredients.add(ingredient);
     }
 
@@ -33,5 +34,16 @@ public class Dish extends MenuItem {
     public boolean checkIfDishContainsIngredient(Ingredient ingredient) {
         return ingredients.contains(ingredient);
     }
+
+    //check if ongredients are available?
+
+    public void reduceAmountOfIngredient() {
+        for (Ingredient ingredient : ingredients) {
+            ingredient.decreaseNumber();
+        }
+    }
+
+
+    //loop through my array and set the amount of ingredients to -1
 
 }

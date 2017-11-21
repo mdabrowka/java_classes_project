@@ -72,4 +72,16 @@ public class DishTest {
         assertEquals(false, dish.checkIfDishContainsIngredient(bread));
     }
 
+
+    @Test
+    public void testCanReduceIngredientNumbers() {
+        dish.addIngredient(ham);
+        dish.addIngredient(bread);
+        dish.reduceAmountOfIngredient();
+        int actual = ham.getNumber();
+        int actual1 = bread.getNumber();
+        assertEquals(1, actual);
+        assertEquals(4, actual1);
+    }
+
 }

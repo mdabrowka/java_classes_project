@@ -27,7 +27,7 @@ public class MenuTest {
         item2 = new Dish("Pizza", 12);
         item3 = new Dish("Tomato", 12);
         item4 = new Dish("Potato", 12);
-        }
+    }
 
 
     @Test

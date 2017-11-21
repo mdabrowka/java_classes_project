@@ -10,6 +10,8 @@ public class Menu<MenuItem> {
     private ArrayList<MenuItem> menuOptions;
 
 
+
+
     public Menu() {
         this.menuOptions = new ArrayList();
     }
@@ -30,8 +32,16 @@ public class Menu<MenuItem> {
 
     public boolean checkIfItemOnTheMenu(MenuItem item) {
         return menuOptions.contains(item);
-//        if (menuOptions.contains(item)) {
-//            return true;
-//        } return false;
     }
+
+//    public void removeMenuItemIfIngredient86() {
+//        for (Dish item : menuOptions) {
+//            if (Ingredient ingredient : ingredients) = 1;
+//            removeFromTheMenu(item);
+//        }
+//    }
+
+    //menuOptions takes in MenuItem and not Dish class, so there is a problem
+
+
 }

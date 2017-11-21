@@ -40,8 +40,8 @@ public class IngredientTest {
 
     @Test
     public void testCanIncreaseNumberByOne() {
-        beef.increaseNumber();
-        assertEquals(21, beef.getNumber());
+        beef.increaseNumber(20);
+        assertEquals(40, beef.getNumber());
     }
 
 }
