@@ -11,23 +11,23 @@ import java.util.HashMap;
  */
 
 public class Pantry {
-    //private ArrayList<Ingredient> pantry;
-    private HashMap<Ingredient, Integer> stock;
+    private ArrayList<Ingredient> pantry;
+
 
 
     public Pantry() {
-        // this.pantry = new ArrayList<Ingredient>();
-        this.stock = new HashMap<Ingredient, Integer>();
+        this.pantry = new ArrayList<Ingredient>();
+
     }
 
 
-    public void addToStock(Ingredient ingredient, Integer integer) {
-        stock.put(ingredient, integer);
+    public void addToStock(Ingredient ingredient) {
+        pantry.add(ingredient);
     }
 
 
     public boolean containsIngredient(Ingredient ingredient) {
-        if (stock.containsKey(ingredient) && stock.get(ingredient) >= 1) {
+        if (pantry.contains(ingredient) && ingredient.getNumber() >= 1) {
             return true;
         }
         return false;
