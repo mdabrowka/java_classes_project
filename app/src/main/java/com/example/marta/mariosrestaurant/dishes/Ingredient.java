@@ -28,5 +28,9 @@ public class Ingredient {
         this.number -= 1;
     }
 
+    public void increaseNumber() {
+        this.number += 1;
+    }
+
 
 }

@@ -37,4 +37,11 @@ public class IngredientTest {
         beef.decreaseNumber();
         assertEquals(19, beef.getNumber());
     }
+
+    @Test
+    public void testCanIncreaseNumberByOne() {
+        beef.increaseNumber();
+        assertEquals(21, beef.getNumber());
+    }
+
 }
