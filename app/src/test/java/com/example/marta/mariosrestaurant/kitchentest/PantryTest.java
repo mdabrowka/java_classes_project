@@ -36,4 +36,10 @@ public class PantryTest {
         assertEquals(0, pantry.pantrySize());
     }
 
+    @Test
+    public void testCanAddToPantry() {
+        pantry.addToPantry(chicken);
+        assertEquals(1, pantry.pantrySize());
+    }
+
 }

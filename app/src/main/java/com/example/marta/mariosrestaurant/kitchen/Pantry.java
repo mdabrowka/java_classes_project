@@ -23,7 +23,7 @@ public class Pantry {
         return this.pantry.size();
     }
 
-    public void addToStock(Ingredient ingredient) {
+    public void addToPantry(Ingredient ingredient) {
         pantry.add(ingredient);
     }
 
