@@ -35,15 +35,24 @@ public class Dish extends MenuItem {
         return ingredients.contains(ingredient);
     }
 
-    //check if ongredients are available?
+
+    public boolean checkIIngredientIsAvailable() {
+          for (Ingredient ingredient: ingredients) {
+              if (ingredient.getNumber() >= 1);
+              return true;
+          }
+        return false;
+    }
+
 
     public void reduceAmountOfIngredient() {
+
         for (Ingredient ingredient : ingredients) {
             ingredient.decreaseNumber();
         }
     }
 
 
-    //loop through my array and set the amount of ingredients to -1
+
 
 }

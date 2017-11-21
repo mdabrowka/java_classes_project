@@ -84,4 +84,12 @@ public class DishTest {
         assertEquals(4, actual1);
     }
 
+    @Test
+    public void testCanCheckThatIngredientsAreAvailable() {
+        dish.addIngredient(ham);
+        dish.addIngredient(bread);
+        dish.checkIIngredientIsAvailable();
+        assertEquals(true, dish.checkIIngredientIsAvailable());
+    }
+
 }
