@@ -16,7 +16,7 @@ public class IngredientTest {
 
     @Before
     public void before() {
-        ingredient = new Ingredient("beef");
+        ingredient = new Ingredient("beef", 20);
     }
 
     @Test

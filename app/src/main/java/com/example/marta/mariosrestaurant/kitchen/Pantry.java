@@ -17,9 +17,11 @@ public class Pantry {
 
     public Pantry() {
         this.pantry = new ArrayList<Ingredient>();
-
     }
 
+    public int pantrySize() {
+        return this.pantry.size();
+    }
 
     public void addToStock(Ingredient ingredient) {
         pantry.add(ingredient);

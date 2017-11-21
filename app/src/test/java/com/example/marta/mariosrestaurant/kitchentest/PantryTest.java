@@ -21,15 +21,19 @@ public class PantryTest {
     @Before
     public void before() {
         pantry = new Pantry();
-        beef = new Ingredient("beef");
-        ham = new Ingredient("ham");
-        chicken = new Ingredient("chicken");
-        pumpkin = new Ingredient("pumpkin");
-        garlic = new Ingredient("garlic");
-        mustard = new Ingredient("mustard");
-        rice = new Ingredient("rice");
-        pasta = new Ingredient("pasta");
+        beef = new Ingredient("beef", 15);
+        ham = new Ingredient("ham", 20);
+        chicken = new Ingredient("chicken", 20);
+        pumpkin = new Ingredient("pumpkin", 7);
+        garlic = new Ingredient("garlic", 25);
+        mustard = new Ingredient("mustard", 10);
+        rice = new Ingredient("rice", 50);
+        pasta = new Ingredient("pasta", 50);
     }
 
+    @Test
+    public void testPantryStartsEmpty() {
+        assertEquals(0, pantry.pantrySize());
+    }
 
 }

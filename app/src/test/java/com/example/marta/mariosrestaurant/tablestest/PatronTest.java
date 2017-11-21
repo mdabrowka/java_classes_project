@@ -30,8 +30,8 @@ public class PatronTest {
         orderedItems = new ArrayList<MenuItem>();
         item1 = new Dish("Spagboll", 12);
         item2 = new Drink("Coca-Cola", 2);
-        pasta = new Ingredient("pasta");
-        sauce = new Ingredient("tomato");
+        pasta = new Ingredient("pasta", 12);
+        sauce = new Ingredient("tomato", 15);
     }
 
     @Test
