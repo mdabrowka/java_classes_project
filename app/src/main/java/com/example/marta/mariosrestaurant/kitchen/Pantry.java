@@ -38,4 +38,12 @@ public class Pantry {
     public void removeFromPantry(Ingredient ingredient) {
         pantry.remove(ingredient);
     }
+
+    public int checkIngredientLevel(Ingredient ingredient) {
+       return ingredient.getNumber();
+    }
+
+    public void removePortionFromPantry(Ingredient ingredient) {
+        ingredient.decreaseNumber();
+    }
 }
