@@ -43,6 +43,10 @@ public class Pantry {
        return ingredient.getNumber();
     }
 
+    public void getDelivery(Ingredient ingredient, int deliveredNumber) {
+        ingredient.increaseNumber(deliveredNumber);
+    }
+
     public void removePortionFromPantry(Ingredient ingredient) {
         ingredient.decreaseNumber();
     }

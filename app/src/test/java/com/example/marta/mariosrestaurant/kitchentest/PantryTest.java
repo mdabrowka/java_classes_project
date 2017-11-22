@@ -57,5 +57,12 @@ public class PantryTest {
         assertEquals(19, pantry.checkIngredientLevel(chicken));
     }
 
+    @Test
+    public void testCanGetIngredientDelivered() {
+        pantry.addToPantry(rice);
+        pantry.getDelivery(rice, 12);
+        assertEquals(62, rice.getNumber());
+    }
+
 
 }
