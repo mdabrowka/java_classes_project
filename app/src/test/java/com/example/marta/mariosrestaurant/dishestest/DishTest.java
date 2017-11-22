@@ -38,7 +38,7 @@ public class DishTest {
 
     @Test
     public void testCanGetPrice() {
-        assertEquals(5, dish.getPrice());
+        assertEquals(5.0, dish.getPrice());
     }
 
     @Test
