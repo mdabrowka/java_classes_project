@@ -10,8 +10,6 @@ public class Menu<Menuable> {
     private ArrayList<Menuable> menuOptions;
 
 
-
-
     public Menu() {
         this.menuOptions = new ArrayList();
     }

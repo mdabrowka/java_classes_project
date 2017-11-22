@@ -16,7 +16,7 @@ import static junit.framework.Assert.assertFalse;
  */
 
 public class MenuTest {
-    MenuItem item1, item2, item3, item4;
+    Menuable item1, item2, item3, item4;
     Menu menu;
 
 

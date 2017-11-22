@@ -26,11 +26,9 @@ public abstract class MenuItem implements Menuable {
         return this.name;
     }
 
-    public ArrayList getIngredients() {
+   public ArrayList getIngredients() {
         return this.ingredients;
     }
-
-
 
 
 }
