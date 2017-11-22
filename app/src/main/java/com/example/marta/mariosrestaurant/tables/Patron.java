@@ -41,11 +41,11 @@ public class Patron {
     }
 
     public double calculateTotalShare() {
-        double total = 0.0;
+        tab = 0.0;
         for (MenuItem item : orderedItems) {
-            total += item.getPrice();
+            tab += item.getPrice();
         }
-        return total;
+        return tab;
     }
 
     public void payBill() {
