@@ -37,7 +37,7 @@ public class Table {
         table.remove(patron);
     }
 
-    public int totalValue() {
+    public double totalValue() {
         int total = 0;
         for (Patron patron : table) {
             total += patron.calculateTotalShare();

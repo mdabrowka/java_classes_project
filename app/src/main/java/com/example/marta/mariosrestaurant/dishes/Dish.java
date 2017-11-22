@@ -31,6 +31,8 @@ public class Dish extends MenuItem {
         ingredients.remove(ingredient);
     }
 
+
+
     public boolean checkIfDishContainsIngredient(Ingredient ingredient) {
         return ingredients.contains(ingredient);
     }
@@ -51,7 +53,6 @@ public class Dish extends MenuItem {
             ingredient.decreaseNumber();
         }
     }
-
 
 
 

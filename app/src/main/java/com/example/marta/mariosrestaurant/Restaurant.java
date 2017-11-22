@@ -48,6 +48,8 @@ public class Restaurant {
    public void acceptPayment(Table table) {
        double cash = table.totalValue();
        addToBudget(cash);
+       patron.payBill();
+       table.resetTable();
    }
 
 }

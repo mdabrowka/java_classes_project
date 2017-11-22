@@ -37,12 +37,8 @@ public class Patron {
     }
 
     public void orderFromMenu(MenuItem item) {
-//        for Ingredient ingredient:
-//        reduceAmountOfIngredient;
-        orderedItems.add(item);
+           orderedItems.add(item);
     }
-
-
 
     public double calculateTotalShare() {
         double total = 0.0;
@@ -53,7 +49,6 @@ public class Patron {
     }
 
     public void payBill() {
-       double total = calculateTotalShare();
         tab = 0;
         //set tab to zero//!!
     }

@@ -26,5 +26,16 @@ public abstract class MenuItem implements Menuable {
         return this.name;
     }
 
+    public ArrayList getIngredients() {
+        return this.ingredients;
+    }
+
+//this doesn't work - why?
+//    public void assembleMenuItem(MenuItem item) {
+//        for (Ingredient ingredient : ingredients) {
+//            item.reduceAmountOfIngredient();
+//        }
+//    }
+
 
 }
