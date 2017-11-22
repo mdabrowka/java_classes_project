@@ -6,8 +6,8 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public class Menu<MenuItem> {
-    private ArrayList<MenuItem> menuOptions;
+public class Menu<Menuable> {
+    private ArrayList<Menuable> menuOptions;
 
 
 
@@ -21,16 +21,16 @@ public class Menu<MenuItem> {
     }
 
 
-    public void addToTheMenu(MenuItem item) {
+    public void addToTheMenu(Menuable item) {
         menuOptions.add(item);
     }
 
-    public void removeFromTheMenu(MenuItem item) {
+    public void removeFromTheMenu(Menuable item) {
         menuOptions.remove(item);
     }
 
 
-    public boolean checkIfItemOnTheMenu(MenuItem item) {
+    public boolean checkIfItemOnTheMenu(Menuable item) {
         return menuOptions.contains(item);
     }
 
