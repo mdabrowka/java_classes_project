@@ -36,14 +36,14 @@ public class Menu {
         return new ArrayList<MenuItem>(menuOptions);
     }
 
-//    public void removeMenuItemIfIngredient86() {
-//        for (Dish item : menuOptions) {
-//            if (Ingredient ingredient : ingredients) = 1;
-//            removeFromTheMenu(item);
-//        }
-//    }
+    public void removeMenuItemIfIngredient86() {
+        for (MenuItem item : menuOptions) {
+            if (item.checkIIngredientIsAvailable() == false);
+            removeFromTheMenu(item);
+        }
+    }
 
-    //menuOptions takes in MenuItem and not Dish class, so there is a problem
+
 
 
 }
