@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public class Menu<Menuable> {
+public class Menu {
     private ArrayList<Menuable> menuOptions;
 
 
