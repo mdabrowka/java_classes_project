@@ -12,6 +12,9 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertFalse;
+
 /**
  * Created by marta on 20/11/2017.
  */
@@ -37,6 +40,17 @@ public class KitchenTest {
         carrot = new Ingredient("carrot", 60);
         garlic = new Ingredient("garlic", 50);
         mushroom = new Ingredient("mushroom", 30);
+        beefStew.addIngredient(beef);
+        beefStew.addIngredient(potato);
+        beefStew.addIngredient(carrot);
+    }
+
+    @Test
+    public void testCanPrepareDish() {
+        kitchen.prepareDish(beefStew);
+        assertEquals(19, beef.getNumber());
+        assertEquals(49, potato.getNumber());
+        assertEquals(59, carrot.getNumber());
     }
 
 
