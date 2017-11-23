@@ -5,4 +5,18 @@ package com.example.marta.mariosrestaurant.dishes;
  */
 
 public interface Ingredientable {
+
+    public int ingredientCount();
+
+    public void addIngredient(Ingredient ingredient);
+
+    public void removeIngredient(Ingredient ingredient);
+
+    public boolean checkIfDishContainsIngredient(Ingredient ingredient);
+
+    public boolean checkIIngredientIsAvailable();
+
+    public void reduceAmountOfIngredient();
+
+
 }

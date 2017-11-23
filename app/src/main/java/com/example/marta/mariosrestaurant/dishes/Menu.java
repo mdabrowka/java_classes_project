@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 
 public class Menu {
-    private ArrayList<Menuable> menuOptions;
+    private ArrayList<MenuItem> menuOptions;
 
 
     public Menu() {
@@ -19,17 +19,21 @@ public class Menu {
     }
 
 
-    public void addToTheMenu(Menuable item) {
+    public void addToTheMenu(MenuItem item) {
         menuOptions.add(item);
     }
 
-    public void removeFromTheMenu(Menuable item) {
+    public void removeFromTheMenu(MenuItem item) {
         menuOptions.remove(item);
     }
 
 
-    public boolean checkIfItemOnTheMenu(Menuable item) {
+    public boolean checkIfItemOnTheMenu(MenuItem item) {
         return menuOptions.contains(item);
+    }
+
+    public ArrayList getMenuItems() {
+        return new ArrayList<MenuItem>(menuOptions);
     }
 
 //    public void removeMenuItemIfIngredient86() {

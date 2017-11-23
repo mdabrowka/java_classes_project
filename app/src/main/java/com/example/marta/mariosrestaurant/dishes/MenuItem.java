@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public abstract class MenuItem implements Menuable {
+public abstract class MenuItem implements Menuable, Ingredientable {
     private String name;
     private double price;
     private ArrayList<Ingredient> ingredients;
@@ -27,7 +27,7 @@ public abstract class MenuItem implements Menuable {
     }
 
    public ArrayList getIngredients() {
-        return this.ingredients;
+        return new ArrayList<Ingredient>(ingredients);
     }
 
 
