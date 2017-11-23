@@ -1,6 +1,7 @@
 package com.example.marta.mariosrestaurant.dishestest;
 
 import com.example.marta.mariosrestaurant.dishes.Dish;
+import com.example.marta.mariosrestaurant.dishes.Ingredient;
 import com.example.marta.mariosrestaurant.dishes.Menu;
 import com.example.marta.mariosrestaurant.dishes.MenuItem;
 import com.example.marta.mariosrestaurant.dishes.Menuable;
@@ -16,8 +17,9 @@ import static junit.framework.Assert.assertFalse;
  */
 
 public class MenuTest {
-    Menuable item1, item2, item3, item4;
+    MenuItem item1, item2, item3, item4;
     Menu menu;
+    Ingredient pasta, sauce, garlic, dough;
 
 
     @Before
@@ -27,6 +29,15 @@ public class MenuTest {
         item2 = new Dish("Pizza", 12);
         item3 = new Dish("Tomato", 12);
         item4 = new Dish("Potato", 12);
+        pasta = new Ingredient("pasta", 1);
+        sauce = new Ingredient("tomato", 1);
+        garlic = new Ingredient("garlic", 3);
+        dough = new Ingredient("dough", 4);
+        item1.addIngredient(pasta);
+        item1.addIngredient(sauce);
+        item1.addIngredient(garlic);
+        item2.addIngredient(dough);
+        item2.addIngredient(garlic);
     }
 
 
@@ -67,4 +78,11 @@ public class MenuTest {
         assertEquals(false, menu.checkIfItemOnTheMenu(item4));
     }
 
+    @Test
+    public void testCanRemoveMenuItemWhenIngredient86() {
+        menu.addToTheMenu(item1);
+        menu.addToTheMenu(item2);
+        menu.removeMenuItemIfIngredient86();
+        assertEquals(1, menu.dishCount());
+    }
 }
