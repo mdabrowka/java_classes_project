@@ -12,10 +12,5 @@ public interface Menuable {
 
     public String getName();
 
-    public ArrayList getIngredients();
-
-
-
-
 
 }
