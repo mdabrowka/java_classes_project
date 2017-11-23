@@ -17,7 +17,7 @@ public class Kitchen {
 
 
 
-    public void prepareDish(MenuItem dish) {
+    public void prepareDish(Dish dish) {
         dish.reduceAmountOfIngredient();
     }
 

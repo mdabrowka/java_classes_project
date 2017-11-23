@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public class Menu {
+public class Menu<MenuItem> {
     private ArrayList<MenuItem> menuOptions;
 
 
@@ -36,14 +36,11 @@ public class Menu {
         return new ArrayList<MenuItem>(menuOptions);
     }
 
-    public void removeMenuItemIfIngredient86() {
-        for (MenuItem item : menuOptions) {
-            if (item.checkIIngredientIsAvailable() == false);
-            removeFromTheMenu(item);
-        }
-    }
-
-
-
+//    public void removeMenuItemIfIngredient86() {
+//        for (MenuItem item : menuOptions) {
+//            if (item.checkIIngredientIsAvailable() == false);
+//            removeFromTheMenu(item);
+//        }
+//    }
 
 }

@@ -60,7 +60,7 @@ public class RestaurantTest {
     @Test
     public void canAddToBudget() {
         restaurant.addToBudget(300);
-        assertEquals(300, restaurant.getBudget());
+        assertEquals(300, restaurant.getBudget(), 0.0);
     }
 
     @Test

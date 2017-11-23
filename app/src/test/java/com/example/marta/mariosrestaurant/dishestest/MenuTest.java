@@ -17,7 +17,7 @@ import static junit.framework.Assert.assertFalse;
  */
 
 public class MenuTest {
-    MenuItem item1, item2, item3, item4;
+    Dish item1, item2, item3, item4;
     Menu menu;
     Ingredient pasta, sauce, garlic, dough;
 
@@ -78,11 +78,11 @@ public class MenuTest {
         assertEquals(false, menu.checkIfItemOnTheMenu(item4));
     }
 
-    @Test
-    public void testCanRemoveMenuItemWhenIngredient86() {
-        menu.addToTheMenu(item1);
-        menu.addToTheMenu(item2);
-        menu.removeMenuItemIfIngredient86();
-        assertEquals(1, menu.dishCount());
-    }
+//    @Test
+//    public void testCanRemoveMenuItemWhenIngredient86() {
+//        menu.addToTheMenu(item1);
+//        menu.addToTheMenu(item2);
+//        menu.removeMenuItemIfIngredient86();
+//        assertEquals(1, menu.dishCount());
+//    }
 }
