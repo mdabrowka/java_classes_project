@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by marta on 18/11/2017.
  */
 
-public class Dish extends MenuItem {
+public class Dish extends MenuItem implements Ingredientable {
     private String name;
     private double price;
     private ArrayList<Ingredient> ingredients;
@@ -17,6 +17,9 @@ public class Dish extends MenuItem {
         this.ingredients = new ArrayList<Ingredient>();
     }
 
+    public ArrayList getIngredients() {
+        return new ArrayList<Ingredient>(ingredients);
+    }
 
     public int ingredientCount() {
         return ingredients.size();
